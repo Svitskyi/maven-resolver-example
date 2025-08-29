@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 git branch: 'main', url: 'https://github.com/Svitskyi/maven-resolver-example.git'
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Build with Maven') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 sh 'mvn clean install'
