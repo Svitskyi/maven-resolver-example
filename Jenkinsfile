@@ -16,7 +16,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                git branch: 'master', url: 'https://your-repo-url.git'
+                git branch: 'main', url: 'https://github.com/Svitskyi/maven-resolver-example.git'
             }
         }
 
