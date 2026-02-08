@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        MAVEN_HOME = '/usr/share/maven' // adjust if needed
+        MAVEN_HOME = '/usr/bin/' // adjust if needed
     }
 
     stages {
