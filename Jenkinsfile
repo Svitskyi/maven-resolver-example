@@ -6,10 +6,6 @@ pipeline {
         pollSCM('H/5 * * * *') // optional: polls every 5 minutes
     }
 
-    environment {
-        MAVEN_HOME = '/usr/bin/' // adjust if needed
-    }
-
     stages {
         stage('Checkout') {
             when {
